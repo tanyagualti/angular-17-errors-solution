@@ -1,0 +1,13 @@
+
+TS-992011: The directive 'NgModel' appears in 'imports', but is not standalone and cannot be imported directly. It must be imported via an NgModule.
+
+when you need to import ngModel fo using you can't import directly ,, you have to import formModule then automatically ngModel import problem will solve
+
+like this:
+
+import { FormsModule, NgForm } from '@angular/forms';
+
+@Component({
+  selector: 'app-signup',
+  standalone: true,
+  imports: [CommonModule,FormsModule],
