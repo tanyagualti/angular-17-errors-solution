@@ -1,0 +1,8 @@
+
+Error: NG0302: The pipe 'async' could not be found in the '_CustomerComponent' component. Verify that it is included in the '@Component.imports' of this component. Find more at
+
+if that type of error is occured pipe not found then make sure that  you import the common module in component ts file
+
+
+
+otherwise this error will occur
